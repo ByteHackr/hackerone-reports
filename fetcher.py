@@ -1,6 +1,5 @@
 """
 This script runs first.
-Works via headless Chrome, so you should add path of chromedriver executable to the PATH.
 
 It will scroll through hacktivity until the appearance of URL of the first report in data.csv.
 Then script searches for all new reports' URLs and add them to data.csv.
@@ -23,10 +22,10 @@ def extract_reports(raw_reports):
     for raw_report in raw_reports:
         html = raw_report.get_attribute('innerHTML')
         try:
-            index = html.index('hackerone.com/reports/')
+            index = html.index('/reports/')
         except ValueError:
             continue
-        link = ''
+        link = 'hackerone.com'
         for i in range(index, index + 50):
             if html[i] == '"':
                 break

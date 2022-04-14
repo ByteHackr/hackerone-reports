@@ -1,9 +1,10 @@
 Tops of HackerOne reports. All reports' raw info stored in `data.csv`.
-Scripts to update `data.csv` are written in Python 3 and require `selenium`.
+Scripts to update this file are written in Python 3 and require `chromedriver` and `Chromium` executables at `PATH`.
 Every script contains some info about how it works.
 The run order of scripts:
 
 1) `fetcher.py`
+1) `uniquer.py`
 1) `filler.py`
 1) `rater.py`
 
@@ -27,6 +28,7 @@ Tops by bug type.
 - [Top Clickjacking reports](tops_by_bug_type/TOPCLICKJACKING.md)
 - [Top DoS reports](tops_by_bug_type/TOPDOS.md)
 - [Top OAuth reports](tops_by_bug_type/TOPOAUTH.md)
+- [Top Account Takeover reports](tops_by_bug_type/TOPACCOUNTTAKEOVER.md)
 
 Tops by program.
 
@@ -69,5 +71,9 @@ Tops by program.
 - [Top Open-Xchange reports](tops_by_program/TOPOPENXCHANGE.md)
 - [Top Razer reports](tops_by_program/TOPRAZER.md)
 - [Top Rockstar Games reports](tops_by_program/TOPROCKSTARGAMES.md)
-- [Top GitHub Security Lab](tops_by_program/TOPGITHUBSECURITYLAB.md)
-- [Top h1-ctf](tops_by_program/TOPH1CTF.md)
+- [Top GitHub Security Lab reports](tops_by_program/TOPGITHUBSECURITYLAB.md)
+- [Top h1-ctf reports](tops_by_program/TOPH1CTF.md)
+- [Top Valve reports](tops_by_program/TOPVALVE.md)
+- [Top Yahoo! reports](tops_by_program/TOPYAHOO!.md)
+- [Top Internet Bug Bounty reports](tops_by_program/TOPINTERNETBUGBOUNTY.md)
+- [Top Concrete CMS reports](tops_by_program/TOPCONCRETECMS.md)
